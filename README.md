@@ -38,11 +38,12 @@ This is a static web project, meaning there is no complex build step required!
 ├── js/
 │   ├── 3d-animations.js    # Three.js background, GSAP animations, & custom cursor
 │   └── script.js           # Form validation, beat sequencer, & mobile nav logic
-├── index.html              # Home page
-├── studio.html             # Studio / Venture concept page
-├── creators.html           # Creators focus page
-├── founders.html           # Founders invitation and FAQ page
-└── contact.html            # Pitch form page (UI only)
+└── html/                   # All HTML pages
+    ├── index.html          # Home page
+    ├── studio.html         # Studio / Venture concept page
+    ├── creators.html       # Creators focus page
+    ├── founders.html       # Founders invitation and FAQ page
+    └── contact.html        # Pitch form page (UI only)
 ```
 
 ## 🛠️ Technology Stack
