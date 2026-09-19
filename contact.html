@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Pitch us | OFF/BEAT website concept</title>
+<meta name="description" content="A concept pitch form for OFF/BEAT. Nothing is sent.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<div class="preloader"><div class="preloader-text">OFF<span>/</span>BEAT</div></div>
+<div class="cursor"></div>
+<div class="cursor-follower"></div>
+<header class="hero hero-sub">
+  <div class="notice">Design concept. This is not the official OFF/BEAT website.</div>
+  <nav class="wrap nav" aria-label="Main">
+    <a class="mark" href="index.html" aria-label="OFF/BEAT home">OFF<span>/</span>BEAT</a>
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="nav-links">Menu</button>
+    <ul class="links" id="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="studio.html">Studio</a></li>
+      <li><a href="creators.html">Creators</a></li>
+      <li><a href="founders.html">Founders</a></li>
+      <li class="only-mobile"><a href="contact.html" aria-current="page">Pitch us</a></li>
+    </ul>
+    <a class="btn btn-gold nav-cta" href="contact.html">Pitch us</a>
+  </nav>
+  <div class="wrap">
+    <h1 class="display sub-title">Pitch us.</h1>
+    <p class="lede">Tell us what you're building. This form is part of the concept, so nothing you type here is sent anywhere.</p>
+  </div>
+</header>
+
+<main>
+  <section class="section wrap">
+    <div class="contact">
+      <form id="pitch-form" novalidate>
+        <label class="field" for="f-name">
+          <span>Your name</span>
+          <input id="f-name" name="name" type="text" autocomplete="name">
+          <span class="err" id="f-name-err" aria-live="polite"></span>
+        </label>
+        <label class="field" for="f-email">
+          <span>Your email</span>
+          <input id="f-email" name="email" type="email" autocomplete="email" placeholder="you@example.com">
+          <span class="err" id="f-email-err" aria-live="polite"></span>
+        </label>
+        <label class="field" for="f-stage">
+          <span>Where are you now?</span>
+          <select id="f-stage" name="stage">
+            <option>Just an idea</option>
+            <option>Already building</option>
+            <option>My last company shut down</option>
+          </select>
+        </label>
+        <label class="field" for="f-idea">
+          <span>What do you want to build?</span>
+          <textarea id="f-idea" name="idea"></textarea>
+          <span class="err" id="f-idea-err" aria-live="polite"></span>
+        </label>
+        <button class="btn btn-blue" type="submit">Send my idea</button>
+        <p id="form-msg" role="status" aria-live="polite"></p>
+      </form>
+
+      <aside>
+        <h2 class="display" style="font-size:clamp(36px,5vw,64px);line-height:.95;margin:0">For the real thing.</h2>
+        <dl class="facts" style="margin-top:28px">
+          <div class="fact"><dt>On X</dt><dd><a href="https://x.com/Offbeatstudios1" rel="noopener">@Offbeatstudios1</a></dd></div>
+          <div class="fact"><dt>Announced</dt><dd>3 March 2026</dd></div>
+          <div class="fact"><dt>This site</dt><dd>An unofficial concept, not run by OFF/BEAT</dd></div>
+        </dl>
+      </aside>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p class="huge display" aria-hidden="true">OFF<span>/</span>BEAT</p>
+    <ul class="foot-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="studio.html">Studio</a></li>
+      <li><a href="creators.html">Creators</a></li>
+      <li><a href="founders.html">Founders</a></li>
+      <li><a href="contact.html">Pitch us</a></li>
+      <li><a href="https://x.com/Offbeatstudios1" rel="noopener">X: @Offbeatstudios1</a></li>
+    </ul>
+    <small>Concept design made for a portfolio. Facts are from public reports published between March and July 2026. Not affiliated with OFF/BEAT or Aman Gupta.</small>
+  </div>
+</footer>
+<canvas id="bg-canvas"></canvas>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+<script src="https://unpkg.com/@studio-freight/lenis@1.0.34/dist/lenis.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+<script src="js/script.js"></script>
+<script src="js/3d-animations.js"></script>
+</body>
+</html>

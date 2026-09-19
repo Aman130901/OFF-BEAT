@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>OFF/BEAT website concept</title>
+<meta name="description" content="An unofficial design concept for OFF/BEAT, a new venture by Aman Gupta, made for a portfolio.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<div class="preloader"><div class="preloader-text">OFF<span>/</span>BEAT</div></div>
+<div class="cursor"></div>
+<div class="cursor-follower"></div>
+
+<header class="hero">
+  <div class="notice">Design concept. This is not the official OFF/BEAT website.</div>
+  <nav class="wrap nav" aria-label="Main">
+    <a class="mark" href="index.html" aria-label="OFF/BEAT home">OFF<span>/</span>BEAT</a>
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="nav-links">Menu</button>
+    <ul class="links" id="nav-links">
+      <li><a href="index.html" aria-current="page">Home</a></li>
+      <li><a href="studio.html">Studio</a></li>
+      <li><a href="creators.html">Creators</a></li>
+      <li><a href="founders.html">Founders</a></li>
+      <li class="only-mobile"><a href="contact.html">Pitch us</a></li>
+    </ul>
+    <a class="btn btn-gold nav-cta" href="contact.html">Pitch us</a>
+  </nav>
+
+  <div class="wrap">
+    <h1 class="display">Built<br>off the<br>beat.</h1>
+    <div class="hero-foot">
+      <p class="lede">OFF/BEAT is a studio for creators, founders and AI-led consumer companies. A generation that doesn't follow the script deserves companies that don't either.</p>
+      <div class="seq">
+        <div class="track" id="track" role="group" aria-label="Beat sequencer"></div>
+        <p class="hint">Tap any step to knock it off the beat.</p>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section id="build" class="section wrap">
+    <h2 class="display">Content, AI and companies that start from zero.</h2>
+    <ul class="rows">
+      <li class="row">
+        <h3 class="display"><span class="sl" aria-hidden="true">/</span><a href="creators.html">Creator-led media</a></h3>
+        <p>Series, formats and communities built with the creators an audience already trusts, made for the platforms people actually use.</p>
+      </li>
+      <li class="row">
+        <h3 class="display"><span class="sl" aria-hidden="true">/</span><a href="studio.html">AI-led consumer products</a></h3>
+        <p>Products designed around what AI can do today, from how people discover them to how they get help after they buy.</p>
+      </li>
+      <li class="row">
+        <h3 class="display"><span class="sl" aria-hidden="true">/</span><a href="studio.html">Venture studio</a></h3>
+        <p>New companies started inside the studio, with the first team and first customers found here. OFF/BEAT may hold a stake and help them scale.</p>
+      </li>
+    </ul>
+    <p class="note">These directions come from public reports. OFF/BEAT has not published its full business model.</p>
+  </section>
+
+  <section id="pitch" class="gold">
+    <div class="wrap">
+      <h2 class="display">Tried once.<br>Building again.</h2>
+      <p class="big">If your last company didn't make it, send us the idea you can't drop.</p>
+      <div class="pitch-row">
+        <label class="sr" for="email">Your email</label>
+        <input id="email" type="email" placeholder="you@example.com" autocomplete="email">
+        <button id="start" class="btn btn-navy" type="button">Start my pitch</button>
+      </div>
+      <p id="msg" role="status" aria-live="polite"></p>
+    </div>
+  </section>
+
+  <section id="about" class="section wrap">
+    <div class="about">
+      <div>
+        <h2 class="display">Aman Gupta</h2>
+        <p>Co-founded boAt and helped grow it past ₹3,000 crore in revenue. A judge on Shark Tank India from season one. Now building OFF/BEAT.</p>
+      </div>
+      <dl class="facts">
+        <div class="fact"><dt>Announced</dt><dd>3 March 2026</dd></div>
+        <div class="fact"><dt>Seed round</dt><dd>₹100 crore, April 2026</dd></div>
+        <div class="fact"><dt>Led by</dt><dd>Bessemer Venture Partners</dd></div>
+        <div class="fact"><dt>Focus</dt><dd>Content, creators and AI</dd></div>
+      </dl>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p class="huge display" aria-hidden="true">OFF<span>/</span>BEAT</p>
+    <ul class="foot-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="studio.html">Studio</a></li>
+      <li><a href="creators.html">Creators</a></li>
+      <li><a href="founders.html">Founders</a></li>
+      <li><a href="contact.html">Pitch us</a></li>
+      <li><a href="https://x.com/Offbeatstudios1" rel="noopener">X: @Offbeatstudios1</a></li>
+    </ul>
+    <small>Concept design made for a portfolio. Facts are from public reports published between March and July 2026. Not affiliated with OFF/BEAT or Aman Gupta.</small>
+  </div>
+</footer>
+<canvas id="bg-canvas"></canvas>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+<script src="https://unpkg.com/@studio-freight/lenis@1.0.34/dist/lenis.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+<script src="js/script.js"></script>
+<script src="js/3d-animations.js"></script>
+</body>
+</html>
